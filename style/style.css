@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+/* ---------------------- */
+/* ------- HEADER ------- */
+/* ---------------------- */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  right: 0;
+  left: 0;
+}
+
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  font-family: sans-serif;
+}
+
+/* ---------------------- */
+/* ------- PHONE-BOX ------- */
+/* ---------------------- */
+
+.devices-box {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  margin: 40px;
+  transition: transform 0.5s, top 0.5s 0.5s;
+}
+.devices-box>p{
+  margin: 20px;
+  font-weight: bold;
+}
+.devices-box>h2{
+  
+  font-weight: bold;
+}
+.devices-box:hover {
+  transform:translateY(-20px);
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.75);
+  transition: transform 0.5s, top 0.5s 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  .devices-box {
+    width: 100vw;
+  }
+}
+.devices {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.details {
+  font-size: 15px;
+  color: black;
+}
+.details:hover {
+  font-size: 15px;
+ color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.basketbutton-box{
+  display: flex;
+  justify-content: center;
+}
+.basketbutton {
+  background-color:#333;
+  color: white;
+  font-size: 120%;
+  border-radius: 300px;
+  border: none;
+  padding: 8px 16px 8px 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.basketbutton:hover {
+  background-color: rgb(74,74,74);;
+}
+/* ---------------------- */
+/* ------- CONTACT ------- */
+/* ---------------------- */
+h2 {
+  text-align: center;
+}
+#name,
+#email,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#submit {
+  background-color: #0e402d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50vw;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+/* ---------------------- */
+/* ------- SUBPAGE ------- */
+/* ---------------------- */
+
+.item-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.item-picture, .item {
+margin-top: 100px;
+
+}
+.item h4, .item>h2, .item>p, .basketbutton  {
+  text-align: center;
+}
+.item>h2 {
+  margin: 25px 0px 25px;
+}
+h4 {
+  font-size: 20px;
+}
+td {
+  padding: 5px 10px 5px 10px;
+}
+@media only screen and (max-width: 992px) {
+  .item-container {
+    flex-wrap: wrap;
+  }
+}
+.content-main {
+
+  margin-bottom: 25px;
+}
+.table {
+  margin: 25px 0 25px;
+}
+h5 {
+  padding: 0 0 0 12px;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* ---------------------- */
+/* ------- FOOTER ------- */
+/* ---------------------- */
+.footer-container {
+  display: flex;
+  background-color: gray;
+  color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: static;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+h5 {
+  text-transform: uppercase;
+}
+.contactus {
+  margin:50px;
+  text-transform: uppercase;
+}
