@@ -107,6 +107,7 @@ a {
 /* ---------------------- */
 h2 {
   text-align: center;
+
 }
 #name,
 #email,
@@ -122,7 +123,7 @@ textarea {
 }
 
 #submit {
-  background-color: #0e402d;
+  background-color: rgb(0,123,255);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -131,7 +132,7 @@ textarea {
 }
 
 #submit:hover {
-  background-color: #45a049;
+  background-color: rgb(0,105,195);
 }
 
 .container {
@@ -150,31 +151,71 @@ textarea {
 /* ---------------------- */
 /* ------- SUBPAGE ------- */
 /* ---------------------- */
-
-.item-container{
+.item-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-.item-picture, .item {
-margin-top: 100px;
-
-}
-.item h4, .item>h2, .item>p, .basketbutton  {
-  text-align: center;
-}
-.item>h2 {
-  margin: 25px 0px 25px;
-}
-h4 {
-  font-size: 20px;
-}
-td {
-  padding: 5px 10px 5px 10px;
-}
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 700px) {
   .item-container {
     flex-wrap: wrap;
   }
+}
+@media only screen and (max-width: 700px) {
+  .item-picture {
+margin-bottom:0 !important;
+margin-top: 50px !important;;
+  }
+}
+@media only screen and (max-width: 700px) {
+.data-wrapper{
+  margin-top: 25px !important;
+}
+}
+@media only screen and (max-width: 700px) {
+  .item-main{
+    margin-top: 25px !important;
+    margin-bottom: 15px !important;
+  }
+  }
+  @media only screen and (max-width: 700px) {
+    h2{
+      margin:25px !important;
+    }
+    }
+.item-picture {
+  margin: 130px;
+}
+.item-main {
+  padding: 20px;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 5rem;
+}
+.item-main>h2{
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 300%
+}
+.item-main>p{
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+}
+.item-details{
+  font-size: 110%;
+  margin-bottom: 50px;
+}
+.data-wrapper>h3 {
+  font-size: 250%;
+  margin-bottom: 30px;
+  padding-left: 12px;
+}
+.item-main>h4 {
+  font-size: 200%;
+  font-weight: 350;
+}
+td {
+  padding: 5px 10px 5px 10px;
 }
 .content-main {
 
@@ -205,15 +246,13 @@ h5 {
 /* ------- FOOTER ------- */
 /* ---------------------- */
 .footer-container {
-  display: flex;
+  display: block;
   background-color: gray;
   color: white;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: static;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  text-align: center;
+  
+ 
+
 }
 h5 {
   text-transform: uppercase;
