@@ -151,7 +151,8 @@ textarea {
 .iframe-container{
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+  padding-bottom: 56.25%;
+  margin-bottom: 30px;
 }
 .iframe-container > *{
   display: block;
