@@ -26,7 +26,6 @@ header {
   right: 0;
   left: 0;
 }
-
 h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -42,15 +41,18 @@ p {
   background-color: white;
   padding: 20px;
   width: 300px;
-  margin: 40px;
+  margin: 30px 40px 30px 40px;
   transition: transform 0.5s, top 0.5s 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .devices-box>p{
-  margin: 20px;
+  margin-top: 1em;
   font-weight: bold;
 }
 .devices-box>h2{
-  
+  margin-bottom: 1em;
   font-weight: bold;
 }
 .devices-box:hover {
@@ -67,11 +69,6 @@ p {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
-.details:hover {
-  font-size: 15px;
- color: black;
-}
 a {
   text-decoration: none;
   color: black;
@@ -86,10 +83,9 @@ a {
   font-size: 120%;
   border-radius: 300px;
   border: none;
-  padding: 8px 16px 8px 16px;
+  padding: 10px 18px 10px 18px;
   font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 15px;
+
 }
 .basketbutton:hover {
   background-color: rgb(74,74,74);;
@@ -97,9 +93,14 @@ a {
 /* ---------------------- */
 /* ------- CONTACT ------- */
 /* ---------------------- */
-h2 {
-  text-align: center;
-
+.contact-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contactus {
+  font-size: 220%;
+  text-align: left;
+  margin:30px 10px;
 }
 #name,
 #email,
@@ -121,17 +122,48 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-
 #submit:hover {
   background-color: rgb(0,105,195);
 }
-
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   width: 50vw;
-  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.maps-text {
+  font-size: 220%;
+  margin: 20px 10px;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+ 
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:1080px;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /* ---------------------- */
@@ -170,7 +202,7 @@ textarea {
 }
 .item-main>h4 {
   font-size: 200%;
-  font-weight: 400;
+  font-weight: 300;
 }
 td {
   padding: 5px 10px 5px 10px;
@@ -208,14 +240,17 @@ h5 {
 h5 {
   text-transform: uppercase;
 }
-.contactus {
-  margin:50px;
-  text-transform: uppercase;
-}
+
 
 /* ---------------------- */
 /* ------- MEDIA QUERY ------- */
 /* ---------------------- */
+@media only screen and (min-width: 700px) {
+  .item-picture>img {
+    position: sticky;
+    top: 150px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .devices-box {
     width: 100vw;
