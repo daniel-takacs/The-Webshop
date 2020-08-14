@@ -175,7 +175,7 @@ textarea {
   justify-content: center;
 }
 .item-picture {
-  margin: 130px;
+  margin: 130px 130px 130px 0;
 }
 .item-main {
   padding: 20px;
