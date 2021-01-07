@@ -26,6 +26,7 @@ header {
   right: 0;
   left: 0;
 }
+
 h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -94,7 +95,7 @@ a {
 /* ------- CONTACT ------- */
 /* ---------------------- */
 .contact-wrapper {
-  max-width: 1000px;
+  max-width: 1260px;
   margin: 0 auto;
 }
 .contactus {
@@ -113,17 +114,6 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-}
-#submit {
-  background-color: rgb(0,123,255);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-#submit:hover {
-  background-color: rgb(0,105,195);
 }
 .container {
   border-radius: 5px;
