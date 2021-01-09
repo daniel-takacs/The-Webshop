@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
-    "serve": "^11.2.0"
+    "serve": "^11.2.0",
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
   }
 }
